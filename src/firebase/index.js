@@ -7,3 +7,7 @@ admin.initializeApp({
     privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY, 
   }) 
 })
+
+const messaging = admin.messaging()
+
+module.exports = messaging
