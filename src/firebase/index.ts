@@ -1,4 +1,4 @@
-const admin = require('firebase-admin')
+import admin from 'firebase-admin'
 
 admin.initializeApp({
   credential: admin.credential.cert({
@@ -8,6 +8,4 @@ admin.initializeApp({
   }) 
 })
 
-const messaging = admin.messaging()
-
-module.exports = messaging
+export const messaging = admin.messaging()
