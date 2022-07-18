@@ -1,4 +1,6 @@
-const routes = require('express').Router()
+import Router from 'express'
+
+const routes = Router()
 
 routes.get('/livecheck', (req, res, next) => {
   res.status(200).send({
@@ -6,4 +8,4 @@ routes.get('/livecheck', (req, res, next) => {
   })
 })
 
-module.exports = routes
+export { routes }

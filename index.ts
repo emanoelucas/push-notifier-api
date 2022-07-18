@@ -1,4 +1,4 @@
-const App = require('./src/server/index')
+import App from './src/server'
 
 const app = new App()
 
