@@ -1,4 +1,4 @@
-import App from './src/server'
+import App from './src/main/server'
 
 const app = new App()
 
